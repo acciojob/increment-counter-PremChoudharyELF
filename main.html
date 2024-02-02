@@ -4,12 +4,20 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<script>
+		function increment() {
+			let count = parseInt(document.getElementById("counter").innerHTML)
+			alert(count);
+			count++;
+			counter.innerHTML = count;
+		}
+	</script>
 </head>
 
 <body>
-	<p id="counter">counter</p>
-	<button id="btn">Increement</button>
-    <script type="text/javascript" src="./script.js">
+	<p id="counter">0</p>
+	<button id="incrementBtn" onclick="increment()">Increment</button>
+    <!-- <script type="text/javascript" src="./script.js"> -->
 </script>
 
 </body>
